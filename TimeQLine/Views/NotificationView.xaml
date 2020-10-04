@@ -1,0 +1,21 @@
+﻿<Window x:Class="TimeQLine.NotificationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeQLine"
+        mc:Ignorable="d"
+        Title="NotificationView" Height="350" Width="500"
+        ResizeMode="NoResize" WindowStyle="None" Background="Transparent" AllowsTransparency="True" ShowActivated="False" ShowInTaskbar="False" Topmost="True">
+    <Grid>
+        <ListView ItemsSource="{Binding Notifications}" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="{Binding Message}" FontSize="32" Foreground="white"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

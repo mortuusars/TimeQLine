@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\Images\icon_size.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\Montserrat-Light.ttf" />
+    <None Remove="Resources\Fonts\Montserrat-Medium.ttf" />
+    <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
+    <None Remove="Resources\Fonts\Montserrat-Thin.ttf" />
+    <None Remove="Resources\Fonts\Nunito-Bold.ttf" />
+    <None Remove="Resources\Fonts\Nunito-ExtraLight.ttf" />
+    <None Remove="Resources\Fonts\Nunito-Light.ttf" />
+    <None Remove="Resources\Fonts\Nunito-Regular.ttf" />
+    <None Remove="Resources\Fonts\PTMono-Regular.ttf" />
+    <None Remove="Resources\Images\icon_size.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf.NetCore" Version="1.0.13" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.2.9" />
+    <PackageReference Include="WpfScreenHelper" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Library\MortuusLogger\MortuusLogger\MortuusLogger.csproj" />
+    <ProjectReference Include="..\TimeQLine.Core\TimeQLine.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\Montserrat-Light.ttf" />
+    <Resource Include="Resources\Fonts\Montserrat-Medium.ttf" />
+    <Resource Include="Resources\Fonts\Montserrat-Regular.ttf" />
+    <Resource Include="Resources\Fonts\Montserrat-Thin.ttf" />
+    <Resource Include="Resources\Fonts\Nunito-Bold.ttf" />
+    <Resource Include="Resources\Fonts\Nunito-ExtraLight.ttf" />
+    <Resource Include="Resources\Fonts\Nunito-Light.ttf" />
+    <Resource Include="Resources\Fonts\Nunito-Regular.ttf" />
+    <Resource Include="Resources\Fonts\PTMono-Regular.ttf" />
+    <Resource Include="Resources\Images\icon_size.ico" />
+  </ItemGroup>
+
+</Project>
